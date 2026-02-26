@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonius J. Wirjadi | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #0b0f19; --text-color: #e2e8f0; --primary-color: #3b82f6; --secondary-color: #8b5cf6; --card-bg: #1e293b; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        
+        /* Navigation */
+        nav { position: fixed; top: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; background: rgba(11, 15, 25, 0.9); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-size: 1.5rem; font-weight: 700; background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { color: var(--text-color); text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero */
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 40%), radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.15), transparent 40%); }
+        .hero-title { font-size: 4rem; font-weight: 700; margin-bottom: 20px; }
+        .hero-title span { background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 1.2rem; max-width: 600px; color: #94a3b8; margin-bottom: 40px; }
+        .btn { padding: 12px 30px; background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); color: white; text-decoration: none; border-radius: 30px; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+
+        /* Portfolio Grid */
+        #portfolio { padding: 100px 10% 50px; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+        .section-title::after { content: ''; display: block; width: 80px; height: 4px; background: var(--primary-color); margin: 10px auto 0; border-radius: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .card { background: var(--card-bg); border-radius: 15px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); }
+        .card:hover { transform: translateY(-10px); border-color: rgba(59, 130, 246, 0.5); }
+        .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid var(--primary-color); }
+        .card-content { padding: 25px; }
+        .card-title { font-size: 1.5rem; margin-bottom: 10px; }
+        .card-link { display: inline-block; margin-top: 15px; color: var(--primary-color); text-decoration: none; font-weight: 600; }
+        .card-link:hover { text-decoration: underline; }
+
+        footer { text-align: center; padding: 30px; color: #64748b; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AJW</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="hero-title">Hello, I'm <span>Antonius J. Wirjadi</span></h1>
+        <p class="hero-subtitle">Mechanical Engineering & Robotics Enthusiast. Discover my hardware projects, designs, and automated systems.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </header>
+
+    <section id="portfolio">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80" alt="Race Car" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Race Car Suspension Design</h3>
+                    <p>Advanced mechanical engineering and structural analysis to maximize traction on the track.</p>
+                    <a href="project-template.html" class="card-link">View Project &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Diamond Substrate" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Diamond Surface Sputtering</h3>
+                    <p>Developing custom sputtering methods to adhere thin metal films to diamond for semiconductors.</p>
+                    <a href="project-template.html" class="card-link">View Project &rarr;</a>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Antonius J. Wirjadi. Built for GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
