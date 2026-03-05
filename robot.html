@@ -16,7 +16,7 @@
         .nav-links a { color: var(--text-color); text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
         .nav-links a:hover { color: var(--primary-color); }
 
-        .project-header { height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.9)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80') center/cover; padding-top: 80px; }
+        .project-header { height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.9)), url('robot.png?w=1200&q=80') center/cover; padding-top: 80px; }
         .project-title { font-size: 3.5rem; font-weight: 700; margin-bottom: 15px; }
         .project-tags { color: var(--primary-color); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
 
@@ -46,31 +46,30 @@
 
     <header class="project-header">
         <div>
-            <p class="project-tags">Materials Science &bull; Surface Modification</p>
-            <h1 class="project-title">Functionalizing Diamond</h1>
+            <p class="project-tags">Mechanical Engineering &bull; Mechanical Design</p>
+            <h1 class="project-title">Robot Vehicle</h1>
         </div>
     </header>
 
     <div class="content-container">
         <h2>Project Overview</h2>
-        <p>This project focused on the surface modification of diamond substrates for semiconductor applications. The primary goal was to successfully deposit thin metal films to optimize thermal management in high-performance electronic environments.</p>
+        <p>This project focused on designing a robot vehicle that consists of three main parts. The chassis, steering mechanism, and propulsion system. The main objective of this robot vehicle is to travel within a distance of approximately 30 ft from its starting point. There are some rules that the robot must complete to be concluded as a successful product. The first rule is that the robot must stay inside the designated track. If the robot crossed the track's line, it will be considered a failure. Secondly, the robot must be able to automatically steer itself during the run to maintain its position inside the track. Last, the robot cannot be touched or pushed during testing. </p>
 
-        <h2>The Challenge</h2>
-        <p>During the development phase, our primary wire bonding tool was unexpectedly decommissioned. This created a significant roadblock in our ability to adhere metal contacts to the diamond surface using our standard operating procedures.</p>
+        <h2>Chassis Design</h2>
+        <p>The robot will have a chassis made out of wood. For the dimension, it is required that the height of the robot must not exceed 20 inches and the width of the robot must not exceed 14 inches. For the robot chassis design, the robot has a width of 12 inches and a height of 16 inches which both satisfy the dimension restrictions. In the robot chassis, there can be found a pneumatic cylinder holder which will be used as its housing.  At the top of the robot, there is a tire holder to keep the tire intact with the robot during testing. At the bottom level of the robot, the dimension of the board is designed to fit all of the required components for the robot, while also following the design requirements.</p>
 
-        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1000&q=80" alt="Lab Equipment" class="project-image-full">
+        <img src="chassis.png?w=1000&q=80" alt="Lab Equipment" class="project-image-full">
 
-        <h2>The Solution & Pivot</h2>
-        <p>Instead of halting the project, I pivoted to designing an alternative methodology. I developed a custom sputtering process to deposit the titanium and metal films directly onto the substrate. This required:</p>
-        <ul>
-            <li>Calculating fracture mechanics and managing thermal stress during deposition.</li>
-            <li>Calibrating the sputtering equipment to ensure uniform film thickness.</li>
-            <li>Testing the adherence and conductivity of the newly bonded metals.</li>
-        </ul>
+        <h2>Steering Mechanism</h2>
+        <p>The robot uses a rack and pinion mechanism for its steering. Some of the main reasons why the robot utilizes rack and pinion are due to its compact design and also a relatively simple mechanism. The control rack and pinion steering method are easy to control and precise. However, some cons that can be found in this steering mechanism is that it may wear out easily due to friction. </p>
 
-        <h2>Outcome</h2>
-        <p>The transition to a sputtering method not only allowed the project to continue on schedule but also resulted in a highly reliable adhesion process that proved resilient under thermal testing.</p>
+         <img src="steering.png?w=1000&q=80" alt="Lab Equipment" class="project-image-full">
 
+        <h2>Propulsion</h2>
+        <p>Utilizing a "hopper" mechanism as the propulsion system allows the robot to have a more consistent force pushing the robot. In addition, its simple mechanism allows the engineer to modify the pneumatic cylinder and repair the errors quickly. The only cons this mechanism has is that hoppers are not as efficient as the other possible propulsion mechanisms such as crankshafts and one-way bearing. Hoppers tend to take a lot of air to power, and the air supply for each robot is very limited.</p>
+
+         <img src="propulsion.png?w=1000&q=80" alt="Lab Equipment" class="project-image-full">
+        
         <a href="index.html" class="back-btn">&larr; Back to Portfolio</a>
     </div>
 
@@ -79,4 +78,5 @@
     </footer>
 
 </body>
+
 </html>
